@@ -1,0 +1,18 @@
+li.swiper-category-single {
+
+    border-radius: 20%;
+    margin-left: 15px;
+}
+
+div.category-display {
+    background-color: #77BF98;
+    opacity: 0.7;
+    padding: 0.5rem;
+    border-radius: 10%;
+}
+
+div.category-display:hover {
+    background-color: #31BF71;
+    color: #143121;
+
+}

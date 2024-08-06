@@ -1,0 +1,68 @@
+
+*.crt
+*.key
+
+bin/
+lib/
+lib64/
+*.pyvenv.cfg
+
+# Python-specific
+    *.pyc
+    *.pyo
+    *.pyd
+    __pycache__/
+    *.so
+
+# Django-specific
+    *.log
+    *.pot
+    *.py[cod]
+    *.sqlite3
+    *.pyo
+    *.mo
+    *.pot
+    *.py[cod]
+    *.pyo
+    *.mo
+    *.pot
+    *.py[cod]
+    *.pyo
+    *.mo
+
+# Environment variables
+    .env
+
+# Django migrations
+#     **/migrations/
+#     *.log
+
+# Media and static files
+#     media/
+#     staticfiles/
+#     static/
+
+# Local environment files
+    .env
+    .vscode/
+    .idea/
+    *.sublime-project
+    *.sublime-workspace
+
+# Docker-specific
+    docker-compose.override.yml
+    .docker/
+
+# Backup files
+    *.bak
+    *.swp
+
+# macOS-specific
+    .DS_Store
+
+# Windows-specific
+    Thumbs.db
+    ehthumbs.db
+    Desktop.ini
+
+#

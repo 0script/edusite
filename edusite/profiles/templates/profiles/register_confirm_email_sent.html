@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Confirmation de l'émail
+{% endblock title %}
+{% block content %}
+
+    <!-- Page Banner Start -->
+    <div class="section page-banner">
+
+        <img class="shape-1 animation-round" src="{% static 'assets/images/shape/shape-8.png' %}" alt="Shape">
+
+        <img class="shape-2" src="{% static 'assets/images/shape/shape-23.png' %}" alt="Shape">
+
+        <div class="container">
+            <!-- Page Banner Start -->
+            <div class="page-banner-content">
+                <ul class="breadcrumb">
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">S'inscrire</a></li>
+                    <li class="active">Inscription terminée</li>
+                </ul>
+                <h2 class="title">inscription <span>terminée</span></h2>
+            </div>
+                <!-- Page Banner End -->
+        </div>
+
+        <!-- Shape Icon Box Start -->
+        <div class="shape-icon-box">
+
+            <img class="icon-shape-1 animation-left" src="{% static 'assets/images/shape/shape-5.png' %}" alt="Shape">
+
+            <div class="box-content">
+                <div class="box-wrapper">
+                    <i class="flaticon-badge"></i>
+                </div>
+            </div>
+
+            <img class="icon-shape-2" src="{% static 'assets/images/shape/shape-6.png' %}" alt="Shape">
+
+        </div>
+        <!-- Shape Icon Box End -->
+
+        <img class="shape-3" src="{% static 'assets/images/shape/shape-24.png' %}" alt="Shape">
+
+        <img class="shape-author" src="{% static 'assets/images/author/author-11.jpg' %}" alt="Shape">
+
+    </div>
+    <!-- Page Banner End -->
+
+    <div class="section section-padding-02 mt-50" style="width:100%;height:40%">
+        <div class="container">
+
+            <!-- Section Title Start -->
+            <div class="section-title shape-03 text-center">
+                <h4 class="sub-title">Votre compte a été créé avec succès.</h4>
+                <h2 class="main-title">Un mail a été envoyé à votre adresse mail pour  <span>confirmation.</span></h2>
+                <p>Si vous ne voyez pas l'e-mail de confirmation dans votre boîte mail, vérifiez vos spams.</p>
+                <p>cliquez sur le bouton "Renvoyer" si vous n'avez toujours pas reçu le mail après 5 minutes</p>
+                <a class="btn btn-primary btn-hover-dark" href="#">Renvoyer</a>
+            </div>
+            <!-- Section Title End -->
+
+        </div>
+    </div>
+
+{% endblock content %}

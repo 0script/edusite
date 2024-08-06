@@ -1,0 +1,5 @@
+{
+    "destination": "zokme00@gmail.com",
+    "subject": "Confirmez votre compte email et validez votre compte",
+    "message": "Merci de nous avoir rejoint. Cliquez sur le lien ci-dessous pour valider votre compte :http://localhost:8000/profile/email_confirmation?id=20240806173741_zokme00@gmail-com_62b752b9-98a8-4bc3-b673-b163123d1d34"
+}
