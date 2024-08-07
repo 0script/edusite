@@ -2,6 +2,9 @@
 *.crt
 *.key
 
+**/lib64
+lib64
+pyvenv.cfg
 bin/
 lib/
 lib64/
