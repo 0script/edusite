@@ -1,65 +1,1154 @@
-{% extends 'base.html' %}
+{% extends 'base_dashboard.html' %}
 {% load static %}
-{% block title %}
-    Confirmation de l'émail
-{% endblock title %}
+{% block title %}Tableau de bord utilisateur{% endblock title %}
 {% block content %}
+        <!-- Courses Admin Start -->
+        <div class="section overflow-hidden position-relative" id="wrapper">
 
-    <!-- Page Banner Start -->
-    <div class="section page-banner">
-
-        <img class="shape-1 animation-round" src="{% static 'assets/images/shape/shape-8.png' %}" alt="Shape">
-
-        <img class="shape-2" src="{% static 'assets/images/shape/shape-23.png' %}" alt="Shape">
-
-        <div class="container">
-            <!-- Page Banner Start -->
-            <div class="page-banner-content">
-                <ul class="breadcrumb">
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">S'inscrire</a></li>
-                    <li class="active">Inscription terminée</li>
-                </ul>
-                <h2 class="title">inscription <span>terminée</span></h2>
-            </div>
-                <!-- Page Banner End -->
-        </div>
-
-        <!-- Shape Icon Box Start -->
-        <div class="shape-icon-box">
-
-            <img class="icon-shape-1 animation-left" src="{% static 'assets/images/shape/shape-5.png' %}" alt="Shape">
-
-            <div class="box-content">
-                <div class="box-wrapper">
-                    <i class="flaticon-badge"></i>
+            <!-- Sidebar Wrapper Start -->
+            <div class="sidebar-wrapper">
+                <div class="menu-list">
+                    <a class="active" href="courses-admin.html"><img src="{% static 'assets/images/menu-icon/icon-1.png' %}" alt="Icon"></a>
+                    <a href="messages.html"><img src="{% static 'assets/images/menu-icon/icon-2.png' %}" alt="Icon"></a>
+                    <a href="overview.html"><img src="{% static 'assets/images/menu-icon/icon-3.png' %}" alt="Icon"></a>
+                    <a href="engagement.html"><img src="{% static 'assets/images/menu-icon/icon-4.png' %}" alt="Icon"></a>
+                    <a href="traffic-conversion.html"><img src="{% static 'assets/images/menu-icon/icon-5.png' %}" alt="Icon"></a>
                 </div>
             </div>
+            <!-- Sidebar Wrapper End -->
 
-            <img class="icon-shape-2" src="{% static 'assets/images/shape/shape-6.png' %}" alt="Shape">
+            
 
-        </div>
-        <!-- Shape Icon Box End -->
 
-        <img class="shape-3" src="{% static 'assets/images/shape/shape-24.png' %}" alt="Shape">
+            <!-- Page Content Wrapper Start -->
+            <div class="page-content-wrapper">
+                <div class="container-fluid custom-container">
 
-        <img class="shape-author" src="{% static 'assets/images/author/author-11.jpg' %}" alt="Shape">
+                    <!-- Message Start -->
+                    <div class="message">
+                        <div class="message-icon">
+                            <img src="{% static 'assets/images/menu-icon/icon-6.png' %}" alt="">
+                        </div>
+                        <div class="message-content">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.</p>
+                        </div>
+                    </div>
+                    <!-- Message End -->
 
-    </div>
-    <!-- Page Banner End -->
+                    <!-- Admin Courses Tab Start -->
+                    <div class="admin-courses-tab">
+                        <h3 class="title">Cours Suivit</h3>
 
-    <div class="section section-padding-02 mt-50" style="width:100%;height:40%">
-        <div class="container">
+                        <div class="courses-tab-wrapper">
+                            <div class="courses-select">
+                                <select>
+                                    <option data-display="Newest First">Newest First</option>
+                                    <option value="1">Oldest First</option>
+                                </select>
+                            </div>
+                            <ul class="nav">
+                                <li><button class="active" data-bs-toggle="tab" data-bs-target="#tab1"><i class="icofont-justify-left"></i></button></li>
+                                <li><button data-bs-toggle="tab" data-bs-target="#tab2"><i class="icofont-align-left"></i></button></li>
+                                <li><button data-bs-toggle="tab" data-bs-target="#tab3"><i class="icofont-eye-blocked"></i></button></li>
+                            </ul>
+                            <div class="tab-btn">
+                                <a href="#" class="btn btn-primary btn-hover-dark">Tout les cours</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Admin Courses Tab End -->
 
-            <!-- Section Title Start -->
-            <div class="section-title shape-03 text-center">
-                <h2 class="main-title">DASHBOARD COMMING SOON</span></h2>
+                    <!-- Admin Courses Tab Content Start -->
+                    <div class="admin-courses-tab-content">
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="tab1">
 
-                {% comment %} <a class="btn btn-primary btn-hover-dark" href="#">Activer</a> {% endcomment %}
+                                <!-- Courses Item Start -->
+                                <div class="courses-item">
+                                    <div class="item-thumb">
+                                        <a href="#">
+                                            <img src="{% static 'assets/images/courses/admin-courses-01.jpg' %}" alt="Courses">
+                                        </a>
+                                    </div>
+
+                                    <div class="content-title">
+                                        <div class="meta">
+                                            <a href="#" class="action">Live</a>
+                                            <a href="#" class="action">Free</a>
+                                            <a href="#" class="action">Public</a>
+                                        </div>
+                                        <h3 class="title"><a href="#">Build An eCommerce Site With WooCommerce and WooLentor.</a></h3>
+                                    </div>
+
+                                    <div class="content-wrapper">
+
+                                        <div class="content-box">
+                                            <p>Earned</p>
+                                            <span class="count">$5,68.00</span>
+                                        </div>
+
+                                        <div class="content-box">
+                                            <p>Enrollment’s</p>
+                                            <span class="count">1,852</span>
+                                        </div>
+
+                                        <div class="content-box">
+                                            <p>Course Rating</p>
+                                            <span class="count">
+													4.5
+													<span class="rating-star">
+														<span class="rating-bar" style="width: 80%;"></span>
+                                            </span>
+                                            </span>
+                                        </div>
+
+                                        <div class="courses-select">
+                                            <select>
+                                                <option data-display="This Month">This Month</option>
+                                                <option value="1">This Year</option>
+                                                <option value="2">This Week</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- Courses Item End -->
+
+                                <!-- Courses Item Start -->
+                                <div class="courses-item">
+                                    <div class="item-thumb">
+                                        <a href="#">
+                                            <img src="{% static 'assets/images/courses/admin-courses-01.jpg' %}" alt="Courses">
+                                        </a>
+                                    </div>
+
+                                    <div class="content-title">
+                                        <div class="meta">
+                                            <a href="#" class="action">Live</a>
+                                            <a href="#" class="action">Free</a>
+                                            <a href="#" class="action">Public</a>
+                                        </div>
+                                        <h3 class="title"><a href="#">Build An eCommerce Site With WooCommerce and WooLentor.</a></h3>
+                                    </div>
+
+                                    <div class="content-wrapper">
+
+                                        <div class="content-box">
+                                            <p>Earned</p>
+                                            <span class="count">$5,68.00</span>
+                                        </div>
+
+                                        <div class="content-box">
+                                            <p>Enrollment’s</p>
+                                            <span class="count">1,852</span>
+                                        </div>
+
+                                        <div class="content-box">
+                                            <p>Course Rating</p>
+                                            <span class="count">
+													4.5
+													<span class="rating-star">
+														<span class="rating-bar" style="width: 80%;"></span>
+                                            </span>
+                                            </span>
+                                        </div>
+
+                                        <div class="courses-select">
+                                            <select>
+                                                <option data-display="This Month">This Month</option>
+                                                <option value="1">This Year</option>
+                                                <option value="2">This Week</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- Courses Item End -->
+
+                                <!-- Courses Item Start -->
+                                <div class="courses-item">
+                                    <div class="item-thumb">
+                                        <a href="#">
+                                            <img src="{% static 'assets/images/courses/admin-courses-01.jpg' %}" alt="Courses">
+                                        </a>
+                                    </div>
+
+                                    <div class="content-title">
+                                        <div class="meta">
+                                            <a href="#" class="action">Live</a>
+                                            <a href="#" class="action">Free</a>
+                                            <a href="#" class="action">Public</a>
+                                        </div>
+                                        <h3 class="title"><a href="#">Build An eCommerce Site With WooCommerce and WooLentor.</a></h3>
+                                    </div>
+
+                                    <div class="content-wrapper">
+
+                                        <div class="content-box">
+                                            <p>Earned</p>
+                                            <span class="count">$5,68.00</span>
+                                        </div>
+
+                                        <div class="content-box">
+                                            <p>Enrollment’s</p>
+                                            <span class="count">1,852</span>
+                                        </div>
+
+                                        <div class="content-box">
+                                            <p>Course Rating</p>
+                                            <span class="count">
+													4.5
+													<span class="rating-star">
+														<span class="rating-bar" style="width: 80%;"></span>
+                                            </span>
+                                            </span>
+                                        </div>
+
+                                        <div class="courses-select">
+                                            <select>
+                                                <option data-display="This Month">This Month</option>
+                                                <option value="1">This Year</option>
+                                                <option value="2">This Week</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- Courses Item End -->
+
+                            </div>
+                            <div class="tab-pane fade" id="tab2">
+
+                                <!-- Courses Item Start -->
+                                <div class="courses-item">
+                                    <div class="item-thumb">
+                                        <a href="#">
+                                            <img src="{% static 'assets/images/courses/admin-courses-01.jpg' %}" alt="Courses">
+                                        </a>
+                                    </div>
+
+                                    <div class="content-title">
+                                        <div class="meta">
+                                            <a href="#" class="action">Live</a>
+                                            <a href="#" class="action">Free</a>
+                                            <a href="#" class="action">Public</a>
+                                        </div>
+                                        <h3 class="title"><a href="#">Build An eCommerce Site With WooCommerce and WooLentor.</a></h3>
+                                    </div>
+
+                                    <div class="content-wrapper">
+
+                                        <div class="content-box">
+                                            <p>Earned</p>
+                                            <span class="count">$5,68.00</span>
+                                        </div>
+
+                                        <div class="content-box">
+                                            <p>Enrollment’s</p>
+                                            <span class="count">1,852</span>
+                                        </div>
+
+                                        <div class="content-box">
+                                            <p>Course Rating</p>
+                                            <span class="count">
+													4.5
+													<span class="rating-star">
+														<span class="rating-bar" style="width: 80%;"></span>
+                                            </span>
+                                            </span>
+                                        </div>
+
+                                        <div class="courses-select">
+                                            <select>
+                                                <option data-display="This Month">This Month</option>
+                                                <option value="1">This Year</option>
+                                                <option value="2">This Week</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- Courses Item End -->
+
+                                <!-- Courses Item Start -->
+                                <div class="courses-item">
+                                    <div class="item-thumb">
+                                        <a href="#">
+                                            <img src="{% static 'assets/images/courses/admin-courses-01.jpg' %}" alt="Courses">
+                                        </a>
+                                    </div>
+
+                                    <div class="content-title">
+                                        <div class="meta">
+                                            <a href="#" class="action">Live</a>
+                                            <a href="#" class="action">Free</a>
+                                            <a href="#" class="action">Public</a>
+                                        </div>
+                                        <h3 class="title"><a href="#">Build An eCommerce Site With WooCommerce and WooLentor.</a></h3>
+                                    </div>
+
+                                    <div class="content-wrapper">
+
+                                        <div class="content-box">
+                                            <p>Earned</p>
+                                            <span class="count">$5,68.00</span>
+                                        </div>
+
+                                        <div class="content-box">
+                                            <p>Enrollment’s</p>
+                                            <span class="count">1,852</span>
+                                        </div>
+
+                                        <div class="content-box">
+                                            <p>Course Rating</p>
+                                            <span class="count">
+													4.5
+													<span class="rating-star">
+														<span class="rating-bar" style="width: 80%;"></span>
+                                            </span>
+                                            </span>
+                                        </div>
+
+                                        <div class="courses-select">
+                                            <select>
+                                                <option data-display="This Month">This Month</option>
+                                                <option value="1">This Year</option>
+                                                <option value="2">This Week</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- Courses Item End -->
+
+                                <!-- Courses Item Start -->
+                                <div class="courses-item">
+                                    <div class="item-thumb">
+                                        <a href="#">
+                                            <img src="{% static 'assets/images/courses/admin-courses-01.jpg' %}" alt="Courses">
+                                        </a>
+                                    </div>
+
+                                    <div class="content-title">
+                                        <div class="meta">
+                                            <a href="#" class="action">Live</a>
+                                            <a href="#" class="action">Free</a>
+                                            <a href="#" class="action">Public</a>
+                                        </div>
+                                        <h3 class="title"><a href="#">Build An eCommerce Site With WooCommerce and WooLentor.</a></h3>
+                                    </div>
+
+                                    <div class="content-wrapper">
+
+                                        <div class="content-box">
+                                            <p>Earned</p>
+                                            <span class="count">$5,68.00</span>
+                                        </div>
+
+                                        <div class="content-box">
+                                            <p>Enrollment’s</p>
+                                            <span class="count">1,852</span>
+                                        </div>
+
+                                        <div class="content-box">
+                                            <p>Course Rating</p>
+                                            <span class="count">
+													4.5
+													<span class="rating-star">
+														<span class="rating-bar" style="width: 80%;"></span>
+                                            </span>
+                                            </span>
+                                        </div>
+
+                                        <div class="courses-select">
+                                            <select>
+                                                <option data-display="This Month">This Month</option>
+                                                <option value="1">This Year</option>
+                                                <option value="2">This Week</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- Courses Item End -->
+
+                            </div>
+                            <div class="tab-pane fade" id="tab3">
+
+                                <!-- Courses Item Start -->
+                                <div class="courses-item">
+                                    <div class="item-thumb">
+                                        <a href="#">
+                                            <img src="{% static 'assets/images/courses/admin-courses-01.jpg' %}" alt="Courses">
+                                        </a>
+                                    </div>
+
+                                    <div class="content-title">
+                                        <div class="meta">
+                                            <a href="#" class="action">Live</a>
+                                            <a href="#" class="action">Free</a>
+                                            <a href="#" class="action">Public</a>
+                                        </div>
+                                        <h3 class="title"><a href="#">Build An eCommerce Site With WooCommerce and WooLentor.</a></h3>
+                                    </div>
+
+                                    <div class="content-wrapper">
+
+                                        <div class="content-box">
+                                            <p>Earned</p>
+                                            <span class="count">$5,68.00</span>
+                                        </div>
+
+                                        <div class="content-box">
+                                            <p>Enrollment’s</p>
+                                            <span class="count">1,852</span>
+                                        </div>
+
+                                        <div class="content-box">
+                                            <p>Course Rating</p>
+                                            <span class="count">
+													4.5
+													<span class="rating-star">
+														<span class="rating-bar" style="width: 80%;"></span>
+                                            </span>
+                                            </span>
+                                        </div>
+
+                                        <div class="courses-select">
+                                            <select>
+                                                <option data-display="This Month">This Month</option>
+                                                <option value="1">This Year</option>
+                                                <option value="2">This Week</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- Courses Item End -->
+
+                                <!-- Courses Item Start -->
+                                <div class="courses-item">
+                                    <div class="item-thumb">
+                                        <a href="#">
+                                            <img src="{% static 'assets/images/courses/admin-courses-01.jpg' %}" alt="Courses">
+                                        </a>
+                                    </div>
+
+                                    <div class="content-title">
+                                        <div class="meta">
+                                            <a href="#" class="action">Live</a>
+                                            <a href="#" class="action">Free</a>
+                                            <a href="#" class="action">Public</a>
+                                        </div>
+                                        <h3 class="title"><a href="#">Build An eCommerce Site With WooCommerce and WooLentor.</a></h3>
+                                    </div>
+
+                                    <div class="content-wrapper">
+
+                                        <div class="content-box">
+                                            <p>Earned</p>
+                                            <span class="count">$5,68.00</span>
+                                        </div>
+
+                                        <div class="content-box">
+                                            <p>Enrollment’s</p>
+                                            <span class="count">1,852</span>
+                                        </div>
+
+                                        <div class="content-box">
+                                            <p>Course Rating</p>
+                                            <span class="count">
+													4.5
+													<span class="rating-star">
+														<span class="rating-bar" style="width: 80%;"></span>
+                                            </span>
+                                            </span>
+                                        </div>
+
+                                        <div class="courses-select">
+                                            <select>
+                                                <option data-display="This Month">This Month</option>
+                                                <option value="1">This Year</option>
+                                                <option value="2">This Week</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- Courses Item End -->
+
+
+
+                                <!-- Courses Item Start -->
+                                <div class="courses-item">
+                                    <div class="item-thumb">
+                                        <a href="#">
+                                            <img src="{% static 'assets/images/courses/admin-courses-01.jpg' %}" alt="Courses">
+                                        </a>
+                                    </div>
+
+                                    <div class="content-title">
+                                        <div class="meta">
+                                            <a href="#" class="action">Live</a>
+                                            <a href="#" class="action">Free</a>
+                                            <a href="#" class="action">Public</a>
+                                        </div>
+                                        <h3 class="title"><a href="#">Build An eCommerce Site With WooCommerce and WooLentor.</a></h3>
+                                    </div>
+
+                                    <div class="content-wrapper">
+
+                                        <div class="content-box">
+                                            <p>Earned</p>
+                                            <span class="count">$5,68.00</span>
+                                        </div>
+
+                                        <div class="content-box">
+                                            <p>Enrollment’s</p>
+                                            <span class="count">1,852</span>
+                                        </div>
+
+                                        <div class="content-box">
+                                            <p>Course Rating</p>
+                                            <span class="count">
+													4.5
+													<span class="rating-star">
+														<span class="rating-bar" style="width: 80%;"></span>
+                                            </span>
+                                            </span>
+                                        </div>
+
+                                        <div class="courses-select">
+                                            <select>
+                                                <option data-display="This Month">This Month</option>
+                                                <option value="1">This Year</option>
+                                                <option value="2">This Week</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- Courses Item End -->
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Admin Courses Tab Start -->
+                    <div class="admin-courses-tab">
+                            <h3 class="title">Cours Terminer</h3>
+    
+                            <div class="courses-tab-wrapper">
+                                <div class="courses-select">
+                                    <select>
+                                        <option data-display="Newest First">Newest First</option>
+                                        <option value="1">Oldest First</option>
+                                    </select>
+                                </div>
+                                <ul class="nav">
+                                    <li><button class="active" data-bs-toggle="tab" data-bs-target="#tab1"><i class="icofont-justify-left"></i></button></li>
+                                    <li><button data-bs-toggle="tab" data-bs-target="#tab2"><i class="icofont-align-left"></i></button></li>
+                                    <li><button data-bs-toggle="tab" data-bs-target="#tab3"><i class="icofont-eye-blocked"></i></button></li>
+                                </ul>
+                                <div class="tab-btn">
+                                    <a href="#" class="btn btn-primary btn-hover-dark">New Course</a>
+                                </div>
+                            </div>
+                    </div>
+                    <!-- Admin Courses Tab End -->
+                    
+                    <!-- Admin Courses Tab Content End -->
+
+                    
+
+                                        <!-- Admin Courses Tab Content Start -->
+                                        <div class="admin-courses-tab-content">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade show active" id="tab1">
+                    
+                                                    <!-- Courses Item Start -->
+                                                    <div class="courses-item">
+                                                        <div class="item-thumb">
+                                                            <a href="#">
+                                                                <img src="{% static 'assets/images/courses/admin-courses-01.jpg' %}" alt="Courses">
+                                                            </a>
+                                                        </div>
+                    
+                                                        <div class="content-title">
+                                                            <div class="meta">
+                                                                <a href="#" class="action">Live</a>
+                                                                <a href="#" class="action">Free</a>
+                                                                <a href="#" class="action">Public</a>
+                                                            </div>
+                                                            <h3 class="title"><a href="#">Build An eCommerce Site With WooCommerce and WooLentor.</a></h3>
+                                                        </div>
+                    
+                                                        <div class="content-wrapper">
+                    
+                                                            <div class="content-box">
+                                                                <p>Earned</p>
+                                                                <span class="count">$5,68.00</span>
+                                                            </div>
+                    
+                                                            <div class="content-box">
+                                                                <p>Enrollment’s</p>
+                                                                <span class="count">1,852</span>
+                                                            </div>
+                    
+                                                            <div class="content-box">
+                                                                <p>Course Rating</p>
+                                                                <span class="count">
+                                                                        4.5
+                                                                        <span class="rating-star">
+                                                                            <span class="rating-bar" style="width: 80%;"></span>
+                                                                </span>
+                                                                </span>
+                                                            </div>
+                    
+                                                            <div class="courses-select">
+                                                                <select>
+                                                                    <option data-display="This Month">This Month</option>
+                                                                    <option value="1">This Year</option>
+                                                                    <option value="2">This Week</option>
+                                                                </select>
+                                                            </div>
+                    
+                                                        </div>
+                                                    </div>
+                                                    <!-- Courses Item End -->
+                    
+                                                    <!-- Courses Item Start -->
+                                                    <div class="courses-item">
+                                                        <div class="item-thumb">
+                                                            <a href="#">
+                                                                <img src="{% static 'assets/images/courses/admin-courses-01.jpg' %}" alt="Courses">
+                                                            </a>
+                                                        </div>
+                    
+                                                        <div class="content-title">
+                                                            <div class="meta">
+                                                                <a href="#" class="action">Live</a>
+                                                                <a href="#" class="action">Free</a>
+                                                                <a href="#" class="action">Public</a>
+                                                            </div>
+                                                            <h3 class="title"><a href="#">Build An eCommerce Site With WooCommerce and WooLentor.</a></h3>
+                                                        </div>
+                    
+                                                        <div class="content-wrapper">
+                    
+                                                            <div class="content-box">
+                                                                <p>Earned</p>
+                                                                <span class="count">$5,68.00</span>
+                                                            </div>
+                    
+                                                            <div class="content-box">
+                                                                <p>Enrollment’s</p>
+                                                                <span class="count">1,852</span>
+                                                            </div>
+                    
+                                                            <div class="content-box">
+                                                                <p>Course Rating</p>
+                                                                <span class="count">
+                                                                        4.5
+                                                                        <span class="rating-star">
+                                                                            <span class="rating-bar" style="width: 80%;"></span>
+                                                                </span>
+                                                                </span>
+                                                            </div>
+                    
+                                                            <div class="courses-select">
+                                                                <select>
+                                                                    <option data-display="This Month">This Month</option>
+                                                                    <option value="1">This Year</option>
+                                                                    <option value="2">This Week</option>
+                                                                </select>
+                                                            </div>
+                    
+                                                        </div>
+                                                    </div>
+                                                    <!-- Courses Item End -->
+                    
+                                                    <!-- Courses Item Start -->
+                                                    <div class="courses-item">
+                                                        <div class="item-thumb">
+                                                            <a href="#">
+                                                                <img src="{% static 'assets/images/courses/admin-courses-01.jpg' %}" alt="Courses">
+                                                            </a>
+                                                        </div>
+                    
+                                                        <div class="content-title">
+                                                            <div class="meta">
+                                                                <a href="#" class="action">Live</a>
+                                                                <a href="#" class="action">Free</a>
+                                                                <a href="#" class="action">Public</a>
+                                                            </div>
+                                                            <h3 class="title"><a href="#">Build An eCommerce Site With WooCommerce and WooLentor.</a></h3>
+                                                        </div>
+                    
+                                                        <div class="content-wrapper">
+                    
+                                                            <div class="content-box">
+                                                                <p>Earned</p>
+                                                                <span class="count">$5,68.00</span>
+                                                            </div>
+                    
+                                                            <div class="content-box">
+                                                                <p>Enrollment’s</p>
+                                                                <span class="count">1,852</span>
+                                                            </div>
+                    
+                                                            <div class="content-box">
+                                                                <p>Course Rating</p>
+                                                                <span class="count">
+                                                                        4.5
+                                                                        <span class="rating-star">
+                                                                            <span class="rating-bar" style="width: 80%;"></span>
+                                                                </span>
+                                                                </span>
+                                                            </div>
+                    
+                                                            <div class="courses-select">
+                                                                <select>
+                                                                    <option data-display="This Month">This Month</option>
+                                                                    <option value="1">This Year</option>
+                                                                    <option value="2">This Week</option>
+                                                                </select>
+                                                            </div>
+                    
+                                                        </div>
+                                                    </div>
+                                                    <!-- Courses Item End -->
+                    
+                                                </div>
+                                                <div class="tab-pane fade" id="tab2">
+                    
+                                                    <!-- Courses Item Start -->
+                                                    <div class="courses-item">
+                                                        <div class="item-thumb">
+                                                            <a href="#">
+                                                                <img src="{% static 'assets/images/courses/admin-courses-01.jpg' %}" alt="Courses">
+                                                            </a>
+                                                        </div>
+                    
+                                                        <div class="content-title">
+                                                            <div class="meta">
+                                                                <a href="#" class="action">Live</a>
+                                                                <a href="#" class="action">Free</a>
+                                                                <a href="#" class="action">Public</a>
+                                                            </div>
+                                                            <h3 class="title"><a href="#">Build An eCommerce Site With WooCommerce and WooLentor.</a></h3>
+                                                        </div>
+                    
+                                                        <div class="content-wrapper">
+                    
+                                                            <div class="content-box">
+                                                                <p>Earned</p>
+                                                                <span class="count">$5,68.00</span>
+                                                            </div>
+                    
+                                                            <div class="content-box">
+                                                                <p>Enrollment’s</p>
+                                                                <span class="count">1,852</span>
+                                                            </div>
+                    
+                                                            <div class="content-box">
+                                                                <p>Course Rating</p>
+                                                                <span class="count">
+                                                                        4.5
+                                                                        <span class="rating-star">
+                                                                            <span class="rating-bar" style="width: 80%;"></span>
+                                                                </span>
+                                                                </span>
+                                                            </div>
+                    
+                                                            <div class="courses-select">
+                                                                <select>
+                                                                    <option data-display="This Month">This Month</option>
+                                                                    <option value="1">This Year</option>
+                                                                    <option value="2">This Week</option>
+                                                                </select>
+                                                            </div>
+                    
+                                                        </div>
+                                                    </div>
+                                                    <!-- Courses Item End -->
+                    
+                                                    <!-- Courses Item Start -->
+                                                    <div class="courses-item">
+                                                        <div class="item-thumb">
+                                                            <a href="#">
+                                                                <img src="{% static 'assets/images/courses/admin-courses-01.jpg' %}" alt="Courses">
+                                                            </a>
+                                                        </div>
+                    
+                                                        <div class="content-title">
+                                                            <div class="meta">
+                                                                <a href="#" class="action">Live</a>
+                                                                <a href="#" class="action">Free</a>
+                                                                <a href="#" class="action">Public</a>
+                                                            </div>
+                                                            <h3 class="title"><a href="#">Build An eCommerce Site With WooCommerce and WooLentor.</a></h3>
+                                                        </div>
+                    
+                                                        <div class="content-wrapper">
+                    
+                                                            <div class="content-box">
+                                                                <p>Earned</p>
+                                                                <span class="count">$5,68.00</span>
+                                                            </div>
+                    
+                                                            <div class="content-box">
+                                                                <p>Enrollment’s</p>
+                                                                <span class="count">1,852</span>
+                                                            </div>
+                    
+                                                            <div class="content-box">
+                                                                <p>Course Rating</p>
+                                                                <span class="count">
+                                                                        4.5
+                                                                        <span class="rating-star">
+                                                                            <span class="rating-bar" style="width: 80%;"></span>
+                                                                </span>
+                                                                </span>
+                                                            </div>
+                    
+                                                            <div class="courses-select">
+                                                                <select>
+                                                                    <option data-display="This Month">This Month</option>
+                                                                    <option value="1">This Year</option>
+                                                                    <option value="2">This Week</option>
+                                                                </select>
+                                                            </div>
+                    
+                                                        </div>
+                                                    </div>
+                                                    <!-- Courses Item End -->
+                    
+                                                    <!-- Courses Item Start -->
+                                                    <div class="courses-item">
+                                                        <div class="item-thumb">
+                                                            <a href="#">
+                                                                <img src="{% static 'assets/images/courses/admin-courses-01.jpg' %}" alt="Courses">
+                                                            </a>
+                                                        </div>
+                    
+                                                        <div class="content-title">
+                                                            <div class="meta">
+                                                                <a href="#" class="action">Live</a>
+                                                                <a href="#" class="action">Free</a>
+                                                                <a href="#" class="action">Public</a>
+                                                            </div>
+                                                            <h3 class="title"><a href="#">Build An eCommerce Site With WooCommerce and WooLentor.</a></h3>
+                                                        </div>
+                    
+                                                        <div class="content-wrapper">
+                    
+                                                            <div class="content-box">
+                                                                <p>Earned</p>
+                                                                <span class="count">$5,68.00</span>
+                                                            </div>
+                    
+                                                            <div class="content-box">
+                                                                <p>Enrollment’s</p>
+                                                                <span class="count">1,852</span>
+                                                            </div>
+                    
+                                                            <div class="content-box">
+                                                                <p>Course Rating</p>
+                                                                <span class="count">
+                                                                        4.5
+                                                                        <span class="rating-star">
+                                                                            <span class="rating-bar" style="width: 80%;"></span>
+                                                                </span>
+                                                                </span>
+                                                            </div>
+                    
+                                                            <div class="courses-select">
+                                                                <select>
+                                                                    <option data-display="This Month">This Month</option>
+                                                                    <option value="1">This Year</option>
+                                                                    <option value="2">This Week</option>
+                                                                </select>
+                                                            </div>
+                    
+                                                        </div>
+                                                    </div>
+                                                    <!-- Courses Item End -->
+                    
+                                                </div>
+                                                <div class="tab-pane fade" id="tab3">
+                    
+                                                    <!-- Courses Item Start -->
+                                                    <div class="courses-item">
+                                                        <div class="item-thumb">
+                                                            <a href="#">
+                                                                <img src="{% static 'assets/images/courses/admin-courses-01.jpg' %}" alt="Courses">
+                                                            </a>
+                                                        </div>
+                    
+                                                        <div class="content-title">
+                                                            <div class="meta">
+                                                                <a href="#" class="action">Live</a>
+                                                                <a href="#" class="action">Free</a>
+                                                                <a href="#" class="action">Public</a>
+                                                            </div>
+                                                            <h3 class="title"><a href="#">Build An eCommerce Site With WooCommerce and WooLentor.</a></h3>
+                                                        </div>
+                    
+                                                        <div class="content-wrapper">
+                    
+                                                            <div class="content-box">
+                                                                <p>Earned</p>
+                                                                <span class="count">$5,68.00</span>
+                                                            </div>
+                    
+                                                            <div class="content-box">
+                                                                <p>Enrollment’s</p>
+                                                                <span class="count">1,852</span>
+                                                            </div>
+                    
+                                                            <div class="content-box">
+                                                                <p>Course Rating</p>
+                                                                <span class="count">
+                                                                        4.5
+                                                                        <span class="rating-star">
+                                                                            <span class="rating-bar" style="width: 80%;"></span>
+                                                                </span>
+                                                                </span>
+                                                            </div>
+                    
+                                                            <div class="courses-select">
+                                                                <select>
+                                                                    <option data-display="This Month">This Month</option>
+                                                                    <option value="1">This Year</option>
+                                                                    <option value="2">This Week</option>
+                                                                </select>
+                                                            </div>
+                    
+                                                        </div>
+                                                    </div>
+                                                    <!-- Courses Item End -->
+                    
+                                                    <!-- Courses Item Start -->
+                                                    <div class="courses-item">
+                                                        <div class="item-thumb">
+                                                            <a href="#">
+                                                                <img src="{% static 'assets/images/courses/admin-courses-01.jpg' %}" alt="Courses">
+                                                            </a>
+                                                        </div>
+                    
+                                                        <div class="content-title">
+                                                            <div class="meta">
+                                                                <a href="#" class="action">Live</a>
+                                                                <a href="#" class="action">Free</a>
+                                                                <a href="#" class="action">Public</a>
+                                                            </div>
+                                                            <h3 class="title"><a href="#">Build An eCommerce Site With WooCommerce and WooLentor.</a></h3>
+                                                        </div>
+                    
+                                                        <div class="content-wrapper">
+                    
+                                                            <div class="content-box">
+                                                                <p>Earned</p>
+                                                                <span class="count">$5,68.00</span>
+                                                            </div>
+                    
+                                                            <div class="content-box">
+                                                                <p>Enrollment’s</p>
+                                                                <span class="count">1,852</span>
+                                                            </div>
+                    
+                                                            <div class="content-box">
+                                                                <p>Course Rating</p>
+                                                                <span class="count">
+                                                                        4.5
+                                                                        <span class="rating-star">
+                                                                            <span class="rating-bar" style="width: 80%;"></span>
+                                                                </span>
+                                                                </span>
+                                                            </div>
+                    
+                                                            <div class="courses-select">
+                                                                <select>
+                                                                    <option data-display="This Month">This Month</option>
+                                                                    <option value="1">This Year</option>
+                                                                    <option value="2">This Week</option>
+                                                                </select>
+                                                            </div>
+                    
+                                                        </div>
+                                                    </div>
+                                                    <!-- Courses Item End -->
+                    
+                    
+                    
+                                                    <!-- Courses Item Start -->
+                                                    <div class="courses-item">
+                                                        <div class="item-thumb">
+                                                            <a href="#">
+                                                                <img src="{% static 'assets/images/courses/admin-courses-01.jpg' %}" alt="Courses">
+                                                            </a>
+                                                        </div>
+                    
+                                                        <div class="content-title">
+                                                            <div class="meta">
+                                                                <a href="#" class="action">Live</a>
+                                                                <a href="#" class="action">Free</a>
+                                                                <a href="#" class="action">Public</a>
+                                                            </div>
+                                                            <h3 class="title"><a href="#">Build An eCommerce Site With WooCommerce and WooLentor.</a></h3>
+                                                        </div>
+                    
+                                                        <div class="content-wrapper">
+                    
+                                                            <div class="content-box">
+                                                                <p>Earned</p>
+                                                                <span class="count">$5,68.00</span>
+                                                            </div>
+                    
+                                                            <div class="content-box">
+                                                                <p>Enrollment’s</p>
+                                                                <span class="count">1,852</span>
+                                                            </div>
+                    
+                                                            <div class="content-box">
+                                                                <p>Course Rating</p>
+                                                                <span class="count">
+                                                                        4.5
+                                                                        <span class="rating-star">
+                                                                            <span class="rating-bar" style="width: 80%;"></span>
+                                                                </span>
+                                                                </span>
+                                                            </div>
+                    
+                                                            <div class="courses-select">
+                                                                <select>
+                                                                    <option data-display="This Month">This Month</option>
+                                                                    <option value="1">This Year</option>
+                                                                    <option value="2">This Week</option>
+                                                                </select>
+                                                            </div>
+                    
+                                                        </div>
+                                                    </div>
+                                                    <!-- Courses Item End -->
+                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Admin Courses Tab Content End -->
+                    
+
+
+                    <!-- Courses Resources Start -->
+                    <div class="courses-resources">
+                        <h4 class="title">Here are our most popular instructor resources.</h4>
+
+                        <!-- Resources Wrapper Start -->
+                        <div class="resources-wrapper">
+                            <div class="row row-cols-xl-6 row-cols-md-3 row-cols-2">
+                                <div class="col">
+
+                                    <!-- Single Resources Start -->
+                                    <div class="single-resources">
+                                        <div class="resources-icon">
+                                            <a href="#">
+                                                <img src="{% static 'assets/images/resources-icon/icon-1-1.png' %}" alt="Icon">
+                                                <img class="hover" src="{% static 'assets/images/resources-icon/icon-2-1.png' %}" alt="Icon">
+                                            </a>
+                                        </div>
+                                        <h5 class="title"><a href="#">Test Video</a></h5>
+                                    </div>
+                                    <!-- Single Resources Start -->
+
+                                </div>
+                                <div class="col">
+
+                                    <!-- Single Resources Start -->
+                                    <div class="single-resources">
+                                        <div class="resources-icon">
+                                            <a href="#">
+                                                <img src="{% static 'assets/images/resources-icon/icon-1-2.png' %}" alt="Icon">
+                                                <img class="hover" src="{% static 'assets/images/resources-icon/icon-2-2.png' %}" alt="Icon">
+                                            </a>
+                                        </div>
+                                        <h5 class="title"><a href="#">Community</a></h5>
+                                    </div>
+                                    <!-- Single Resources Start -->
+
+                                </div>
+                                <div class="col">
+
+                                    <!-- Single Resources Start -->
+                                    <div class="single-resources">
+                                        <div class="resources-icon">
+                                            <a href="#">
+                                                <img src="{% static 'assets/images/resources-icon/icon-1-3.png' %}" alt="Icon">
+                                                <img class="hover" src="{% static 'assets/images/resources-icon/icon-2-3.png' %}" alt="Icon">
+                                            </a>
+                                        </div>
+                                        <h5 class="title"><a href="#">Teaching Center</a></h5>
+                                    </div>
+                                    <!-- Single Resources Start -->
+
+                                </div>
+                                <div class="col">
+
+                                    <!-- Single Resources Start -->
+                                    <div class="single-resources">
+                                        <div class="resources-icon">
+                                            <a href="#">
+                                                <img src="{% static 'assets/images/resources-icon/icon-1-4.png' %}" alt="Icon">
+                                                <img class="hover" src="{% static 'assets/images/resources-icon/icon-2-4.png' %}" alt="Icon">
+                                            </a>
+                                        </div>
+                                        <h5 class="title"><a href="#">Insight Courses</a></h5>
+                                    </div>
+                                    <!-- Single Resources Start -->
+
+                                </div>
+                                <div class="col">
+
+                                    <!-- Single Resources Start -->
+                                    <div class="single-resources">
+                                        <div class="resources-icon">
+                                            <a href="#">
+                                                <img src="{% static 'assets/images/resources-icon/icon-1-5.png' %}" alt="Icon">
+                                                <img class="hover" src="{% static 'assets/images/resources-icon/icon-2-5.png' %}" alt="Icon">
+                                            </a>
+                                        </div>
+                                        <h5 class="title"><a href="#">Help & Support</a></h5>
+                                    </div>
+                                    <!-- Single Resources Start -->
+
+                                </div>
+                                <div class="col">
+
+                                    <!-- Single Resources Start -->
+                                    <div class="single-resources">
+                                        <div class="resources-icon">
+                                            <a href="#">
+                                                <img src="{% static 'assets/images/resources-icon/icon-1-6.png' %}" alt="Icon">
+                                                <img class="hover" src="{% static 'assets/images/resources-icon/icon-2-6.png' %}" alt="Icon">
+                                            </a>
+                                        </div>
+                                        <h5 class="title"><a href="#">Insight Courses</a></h5>
+                                    </div>
+                                    <!-- Single Resources Start -->
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Resources Wrapper End -->
+
+                    </div>
+                    <!-- Courses Resources End -->
+
+                </div>
             </div>
-            <!-- Section Title End -->
+            <!-- Page Content Wrapper End -->
 
         </div>
-    </div>
-
+        <!-- Courses Admin End -->
 {% endblock content %}

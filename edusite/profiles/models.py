@@ -13,7 +13,6 @@ class Profile(models.Model):
     address=models.CharField( max_length=50)
     photo = models.ImageField(upload_to='profil/%Y/%m/%d/',blank=True)
     created_at = models.DateTimeField(default=timezone.now)
-    unique_id=models.UUIDField(blank=True,null=True)
-    
+    unique_id=models.CharField(max_length=55,blank=True,null=True) 
     def __str__(self):
         return f'Profile of {self.user.username}'

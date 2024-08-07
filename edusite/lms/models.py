@@ -64,3 +64,6 @@ class Course(models.Model):
     
     def __str__(self):
         return self.title
+
+# class CourseProgression(models.Model):
+#     course=models.ForeignKey(Course, verbose_name=_(""), on_delete=models.CASCADE)

@@ -1,5 +1,6 @@
 from datetime import datetime, timedelta
 import uuid
+import time
 
 def create_unique_identifier(current_date_str, name):
     # Convert the input string to a datetime object
@@ -28,7 +29,13 @@ def parse_unique_identifier(unique_id):
         print("Invalid unique identifier format.")
         return None
 
-# Example usage
+def check_datetime(date_obj):
+    current_time = datetime.now()
+    if date_obj >= current_time:
+        return False
+        
+    time_difference = current_time - date_obj
+    return time_difference.total_seconds() < 24 * 3600
 
 
 # Example usage
@@ -39,5 +46,8 @@ print(unique_id)
 
 print('reverso')
 parsed_date, parsed_name = parse_unique_identifier(unique_id)
+
+
 print(f"Date: {parsed_date}")
 print(f"Name: {parsed_name}")
+

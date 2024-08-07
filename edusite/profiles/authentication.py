@@ -1,0 +1,40 @@
+from django.contrib.auth.models import User
+from profiles.models import Profile
+
+
+class EmailAuthBackend:
+    """
+    Authenticate using an e-mail address.
+    """
+    def authenticate(self, request, username=None, password=None,user_obj=None):
+        if user_obj is None:
+            try:
+                user = User.objects.get(email=username)
+                if user.check_password(password):
+                    return user
+                return None
+            except (User.DoesNotExist, User.MultipleObjectsReturned):
+                return None
+        else:
+            print(f'\n\n athentication {user_obj}')
+            print(f'email {user_obj.email}')
+            try:
+                user = User.objects.get(email=user_obj.email)
+                
+                return user
+                return None
+            except (User.DoesNotExist, User.MultipleObjectsReturned):
+                return None
+
+    def get_user(self, user_id):
+        try:
+            return User.objects.get(pk=user_id)
+        except User.DoesNotExist:
+            return None
+
+
+def create_profile(backend, user, *args, **kwargs):
+    """
+    Create user profile for social authentication
+    """
+    Profile.objects.get_or_create(user=user)

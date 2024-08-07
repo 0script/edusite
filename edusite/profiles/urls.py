@@ -1,6 +1,6 @@
 from django.urls import path, include
 #from django.contrib.auth import views as auth_views
-from profiles.views import registration,email_confirmation_view,dashboard_user
+from profiles.views import registration,email_confirmation_view,dashboard_user,user_login
 
 app_name='profiles'
 urlpatterns = [
@@ -34,6 +34,7 @@ urlpatterns = [
 
     # path('', include('django.contrib.auth.urls')),
     # path('', views.dashboard, name='dashboard'),
+    path('login/',user_login,name='login'),
     path('register/', registration, name='register'),
     path('email_confirmation/',email_confirmation_view,name='confirm_email'),
     path('dashboard/',dashboard_user,name='dashboard_user'),
